@@ -1,3 +1,53 @@
-* {
-  background-color: red;
+body {
+  background-image: url(/flamingo.jpg);
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  background-size: 100vw;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.leaderboard {
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+  
+}
+
+.lb {
+  display: flex;
+  background-color: rgba(5, 253, 5, 0.678);
+  border: solid black 1px;
+  align-items: center;  
+  width: 70vw;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.voteButton {
+  display: flex;
+  background-color: rgb(231, 20, 20);
+  float: right;
+  padding: 14px;
+  border-radius: 8%;
 }
