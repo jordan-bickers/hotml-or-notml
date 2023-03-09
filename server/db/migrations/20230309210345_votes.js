@@ -5,7 +5,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable('votes', (table) => {
     table.increments('id').primary()
-    table.integer('tag_id').references('tags.id').onDelete('CASCADE')
+    table.integer('tag_id').references('tags.id').onDelete('CASCADE') //
     table.integer('count')
   })
 }
