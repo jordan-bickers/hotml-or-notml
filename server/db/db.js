@@ -4,11 +4,11 @@ const connection = require('knex')(config)
 
 module.exports = {
   getUser: getUser,
-  getUsers: getUsers,
+  getTags,
 }
 
-function getUsers(db = connection) {
-  return db('users').select()
+function getTags(db = connection) {
+  return db('tags').select()
 }
 
 function getUser(id, db = connection) {
