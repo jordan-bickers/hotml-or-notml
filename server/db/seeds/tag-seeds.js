@@ -6,11 +6,41 @@ exports.seed = async function (knex) {
   // Deletes ALL existing entries
   await knex('tags').del()
   await knex('tags').insert([
-    { id: 1, name: '<h1>', description: 'blahblah' },
-    { id: 2, name: '<p>', description: 'blahblah' },
-    { id: 3, name: '<body>', description: 'blahblah' },
-    { id: 4, name: '<img>', description: 'blahblah' },
-    { id: 5, name: '<span>', description: 'blahblah' },
+    {
+      id: 1,
+      name: '<h1>',
+      description: 'blahblah',
+      description_id: 1,
+      vote_id: 1,
+    },
+    {
+      id: 2,
+      name: '<p>',
+      description: 'blahblah',
+      description_id: 2,
+      vote_id: 2,
+    },
+    {
+      id: 3,
+      name: '<body>',
+      description: 'blahblah',
+      description_id: 3,
+      vote_id: 3,
+    },
+    {
+      id: 4,
+      name: '<img>',
+      description: 'blahblah',
+      description_id: 4,
+      vote_id: 4,
+    },
+    {
+      id: 5,
+      name: '<span>',
+      description: 'blahblah',
+      description_id: 5,
+      vote_id: 5,
+    },
   ])
 }
 
