@@ -5,28 +5,16 @@ const db = require('../db/db')
 const router = express.Router()
 
 router.get('/profile/:id', (req, res) => {
-  const id = Number(req.params.id)
-
-  //TODO: Replace this with tags data
-
-  const tags = [
-    {
-      id: id,
-      name: 'h1',
-      description: 'hey there sexy h1',
-      vote_id: 1,
-      count: 200,
-    },
-  ]
-
-  db.function()
-    .then((item) => {
+  //const id = Number(req.params.id)
+  console.log('help')
+  db.getTags()
+    .then((tags) => {
       const viewData = {
         tags: tags,
-        item: item,
       }
+      console.log(viewData)
 
-      res.render('profile', viewData)
+      res.render('profile', viewData[0])
     })
     .catch((err) => {
       res.status(500).send('DATABASE ERROR: ' + err.message)

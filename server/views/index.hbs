@@ -1,5 +1,14 @@
-<ul>
-  {{#each users}}
-  <li>{{name}} ({{email}})</li>
+<div class="leaderboard">
+  
+  {{#each tags}}
+  <div class="lb">
+    <img src="/favicon.ico" alt="">
+    <h4>{{name}}</h4> 
+    <p>{{description}}</p>
+    {{!-- <a href="/profile/{{id}}">view profile</a> --}}
+    <button class="voteButton" type="button">UpVote</button>
+  </div>
   {{/each}}
-</ul>
+    
+  
+</div>

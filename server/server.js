@@ -19,8 +19,8 @@ server.set('view engine', 'hbs')
 server.set('views', __dirname + '/views')
 
 // Routes
-server.use('/', userRoutes)
-server.use('/leaderboard', leaderboardRoutes)
+//server.use('/', userRoutes)
+server.use('/', leaderboardRoutes)
 // server.use('/comment', commentRoutes)
 // server.use('/profile', profileRoutes)
 
