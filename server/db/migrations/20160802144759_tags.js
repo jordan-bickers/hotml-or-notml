@@ -3,8 +3,8 @@ exports.up = (knex) => {
     table.increments('id').primary()
     table.string('name')
     table.text('description')
-    table.text('description_id')
-    table.text('vote_id')
+    table.integer('description_id')
+    table.integer('vote_id')
   })
 }
 

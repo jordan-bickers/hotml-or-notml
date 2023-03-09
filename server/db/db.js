@@ -7,8 +7,12 @@ module.exports = {
   getTags,
 }
 
+//creates one object
 function getTags(db = connection) {
-  return db('tags').select()
+  return db('tags')
+    .select()
+    .join('descriptions', 'description_id', 'descriptions.id')
+    .join('votes', 'vote_id', 'votes.id')
 }
 
 // function getUser(id, db = connection) {
