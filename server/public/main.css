@@ -1,8 +1,30 @@
 body {
-  background-image: url(/flamingo.jpg);
-  background-repeat: no-repeat;
-  backdrop-filter: blur(8px);
-  background-size: 100vw;
+  background: #a92b98;
+  background: linear-gradient(0deg, #a92b98 0%, #000 100%);
+  height: 100vw;
+  color: #fff;
+  /* font-family: 'Climate Crisis', cursive; */
+  /* font-family: 'Tilt Neon', cursive; */
+  font-family: 'Tilt Warp', cursive;
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.vl {
+  border-left: 2px solid white;
+  height: 30px;
+}
+
+.desc {
+  height: 20px;
+  width: 40vw;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  text-overflow: clip;
+  display: inline-block;
 }
 
 header {
@@ -33,8 +55,6 @@ header {
 
 .lb {
   display: flex;
-  background-color: rgba(5, 253, 5, 0.678);
-  border: solid black 1px;
   align-items: center;  
   width: 70vw;
   flex-wrap: wrap;
