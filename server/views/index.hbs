@@ -1,12 +1,13 @@
 <div class="leaderboard">
   
   {{#each tags}}
+  
   <div class="lb">
-    <img src="/favicon.ico" alt="">
+    <a href="/profile/{{id}}"><img src="/favicon.ico" alt=""></a>
     <div class="vl"></div>
     <h4>{{name}}</h4> 
     <div class="vl"></div>
-    <p>{{description}}</p> {{vote_count}}
+    <p class="desc">{{description}}</p> {{vote_count}}
     <div class="vl"></div>
     {{!-- <a href="/profile/{{id}}">view profile</a> --}}
     <form method="post" action="/vote">
