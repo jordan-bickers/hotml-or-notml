@@ -66,8 +66,18 @@ header {
 
 .voteButton {
   display: flex;
-  background-color: rgb(231, 20, 20);
-  float: right;
-  padding: 14px;
-  border-radius: 8%;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.voteButton:hover {
+  background-color: #a92b98; 
+  color: white;
 }
