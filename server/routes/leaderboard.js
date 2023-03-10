@@ -39,6 +39,23 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/profile/:id', (req, res) => {
+  const id = Number(req.params.id)
+  db.countVotes()
+    .then((tags) => {
+      console.log(tags)
+      const profileData = tags.find((el) => {
+        return el.id === id
+      })
+      console.log(`this is the profile data:`, profileData)
+
+      res.render('profile', profileData)
+    })
+    .catch((err) => {
+      res.status(500).send('DATABASE ERROR: ' + err.message)
+    })
+})
+
 router.post('/vote', (req, res) => {
   res.redirect('/')
 })

@@ -2,10 +2,7 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 
-const userRoutes = require('./routes/users')
 const leaderboardRoutes = require('./routes/leaderboard.js')
-const commentRoutes = require('./routes/comment')
-const profileRoutes = require('./routes/profile')
 
 const server = express()
 
