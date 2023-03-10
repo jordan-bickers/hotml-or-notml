@@ -9,35 +9,40 @@ exports.seed = async function (knex) {
     {
       id: 1,
       name: '<h1>',
-      description: 'blahblah',
+      description:
+        'The bold and confident one, always taking up space and commanding attention',
       description_id: 1,
       vote_id: 1,
     },
     {
       id: 2,
       name: '<p>',
-      description: 'blahblah',
+      description:
+        'The sweet and friendly one, easy to talk to and always ready for a conversation',
       description_id: 2,
       vote_id: 2,
     },
     {
       id: 3,
       name: '<body>',
-      description: 'blahblah',
+      description:
+        'The warm and calming one, with a sense of serenity and order admidst chaos',
       description_id: 3,
       vote_id: 3,
     },
     {
       id: 4,
       name: '<img>',
-      description: 'blahblah',
+      description:
+        "The visual one, always looking sharp and catching everyone's eye",
       description_id: 4,
       vote_id: 4,
     },
     {
       id: 5,
       name: '<span>',
-      description: 'blahblah',
+      description:
+        'The versatile one, able to fit into any situation and adapt to any role',
       description_id: 5,
       vote_id: 5,
     },
