@@ -28,4 +28,5 @@ function countVotes(db = connection) {
     .groupBy('tags.id')
     .select('tags.*')
     .count('votes.id as vote_count')
+    .orderBy('vote_count', 'desc')
 }
