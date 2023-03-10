@@ -12,31 +12,31 @@ exports.seed = async function (knex) {
       description:
         'The bold and confident one, always taking up space and commanding attention',
       description_id: 1,
-      vote_id: 1,
+      vote_id: 1683,
     },
     {
       id: 2,
       name: '<p>',
       description:
-        'The sweet and friendly one, easy to talk to and always ready for a conversation',
+        'A classic. A bit overly chatty but always sweet and friendly one, easy to talk to and always ready for a conversation',
       description_id: 2,
-      vote_id: 2,
+      vote_id: 2957,
     },
     {
       id: 3,
       name: '<body>',
       description:
-        'The warm and calming one, with a sense of serenity and order admidst chaos',
+        'Look at the curvature of that body. The warm and calming one, with a sense of serenity and order admidst chaos',
       description_id: 3,
-      vote_id: 3,
+      vote_id: 3927,
     },
     {
       id: 4,
       name: '<img>',
       description:
-        "The visual one, always looking sharp and catching everyone's eye",
+        "Eye catching, always turning heads and getting double takes. The visual one, always looking sharp and catching everyone's eye",
       description_id: 4,
-      vote_id: 4,
+      vote_id: 4990,
     },
     {
       id: 5,
@@ -44,7 +44,47 @@ exports.seed = async function (knex) {
       description:
         'The versatile one, able to fit into any situation and adapt to any role',
       description_id: 5,
-      vote_id: 5,
+      vote_id: 4761,
+    },
+    {
+      id: 6,
+      name: '<a>',
+      description:
+        'The social one. Always making connections and leading people to new places',
+      description_id: 6,
+      vote_id: 4386,
+    },
+    {
+      id: 7,
+      name: '<ul>',
+      description:
+        'The organised one. Keeping things in order, and making sure everyone is on the same page.',
+      description_id: 7,
+      vote_id: 4761,
+    },
+    {
+      id: 8,
+      name: '<div>',
+      description:
+        'Winner 7 years in a row, but quickly falling out of fashion. The mysterious one. Hard to read at first but always revealling new sides of themselves.',
+      description_id: 8,
+      vote_id: 4243,
+    },
+    {
+      id: 9,
+      name: '<input>',
+      description:
+        'The active one. Always ready to take on new challenges and adapt to different situations.',
+      description_id: 9,
+      vote_id: 4098,
+    },
+    {
+      id: 10,
+      name: '<form>',
+      description:
+        'Wow! Look at that form. The collaborative one. Working with others to achieve common goals and make things happen.',
+      description_id: 10,
+      vote_id: 3987,
     },
   ])
 }
