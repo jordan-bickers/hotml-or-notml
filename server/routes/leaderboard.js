@@ -47,9 +47,9 @@ router.get('/profile/:id', (req, res) => {
       const profileData = tags.find((el) => {
         return el.id === id
       })
-      console.log(profileData)
+      console.log(`this is the profile data:`, profileData)
 
-      res.render('profile', { tags: profileData })
+      res.render('profile', profileData)
     })
     .catch((err) => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
