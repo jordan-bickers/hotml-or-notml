@@ -4,9 +4,12 @@
   <div class="lb">
     <img src="/favicon.ico" alt="">
     <h4>{{name}}</h4> 
-    <p>{{description}}</p>
+    <p>{{description}}</p> {{vote_count}}
     {{!-- <a href="/profile/{{id}}">view profile</a> --}}
-    <button class="voteButton" type="button">UpVote</button>
+    <form method="post" action="/vote">
+    <input name="id" type="hidden" value="{{id}}"/>
+    <button class="voteButton" type="submit">UpVote</button>
+    </form>
   </div>
   {{/each}}
     
